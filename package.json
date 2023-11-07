@@ -1,0 +1,14 @@
+{
+  "name": "fast-track",
+  "version": "1.0.0",
+  "description": "quiz app",
+  "main": "index.js",
+  "repository": "https://github.com/Renato66/fast-track.git",
+  "author": "Renato Vicente <revi66@hotmail.com>",
+  "license": "MIT",
+  "packageManager": "yarn@4.0.1",
+  "engines": {
+    "node": ">=20.5.x",
+    "yarn": ">=4.0.x"
+  }
+}
