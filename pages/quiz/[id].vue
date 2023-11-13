@@ -15,7 +15,8 @@ const answers = ref([]) as Ref<string[]>
 const rank = ref(null) as Ref<{ betterThenPercentage: number; score: number; } | null>
 
 
-const { data } = await useFetch(`/api/quiz/${route.params.id}`)
+const { data: notTypedData } = await useFetch(`/api/quiz/${route.params.id}`)
+const data = notTypedData as Ref<{ title: string, description: string, image: string }>
 
 if (!data.value) {
   throw createError({
